@@ -1,0 +1,29 @@
+
+> sourav_portfolio@0.0.0 build
+> vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 435 modules transformed.
+[31m✗[39m Build failed in 2.22s
+[31merror during build:
+[31msrc/components/Home.jsx (8:7): "default" is not exported by "src/components/Footer.jsx", imported by "src/components/Home.jsx".[31m
+file: [36mC:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/src/components/Home.jsx:8:7[31m
+[33m
+ 6: import Experience from './Experience';
+ 7: import Contact from './Contact';
+ 8: import Footer from './Footer';
+           ^
+ 9: 
+10: export default function Home() {
+[31m
+    at getRollupError (file:///C:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at error (file:///C:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+    at Module.error (file:///C:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/node_modules/rollup/dist/es/shared/node-entry.js:17037:16)
+    at Module.traceVariable (file:///C:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/node_modules/rollup/dist/es/shared/node-entry.js:17449:29)
+    at ModuleScope.findVariable (file:///C:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/node_modules/rollup/dist/es/shared/node-entry.js:15067:39)
+    at FunctionScope.findVariable (file:///C:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at FunctionBodyScope.findVariable (file:///C:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at Identifier.bind (file:///C:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/node_modules/rollup/dist/es/shared/node-entry.js:5447:40)
+    at CallExpression.bind (file:///C:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/node_modules/rollup/dist/es/shared/node-entry.js:2825:28)
+    at CallExpression.bind (file:///C:/Users/ASUS/OneDrive/Desktop/sourav_portfolio/node_modules/rollup/dist/es/shared/node-entry.js:12179:15)[39m
