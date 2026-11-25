@@ -37,10 +37,13 @@ export default function About() {
             className="text-lg text-gray-300 leading-relaxed space-y-6"
           >
             <p className="max-w-xl">
-              Hi, I’m Sourav, a self-driven Full-Stack Developer specializing in the MERN stack. I’m driven by curiosity and a strong desire to build meaningful digital products. What began as an interest in understanding how web applications work quickly grew into a deep commitment to mastering JavaScript, TypeScript, and modern backend development.
+              I’m a Full-Stack Developer based in Kerala, India, with a background in graphic design and a strong interest in backend engineering and software architecture.
             </p>
             <p className="max-w-xl">
-              Through hands-on projects, I’ve gained experience building scalable APIs, implementing authentication, and deploying real-world applications. I’m continuously learning and improving to grow as a reliable and impactful engineer.
+              I build web applications using JavaScript, TypeScript, React, Node.js, and modern database technologies. My project experience includes authentication, real-time communication, payment integrations, REST APIs, and cloud deployment.
+            </p>
+            <p className="max-w-xl">
+              My design background helps me combine thoughtful user experiences with reliable and maintainable software solutions.
             </p>
           </motion.div>
         </div>

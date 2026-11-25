@@ -2,21 +2,28 @@ import { motion } from "framer-motion";
 
 const experienceData = [
   {
+    title: "Full-Stack Developer Trainee",
+    organization: "Brototype, Kochi",
+    duration: "Sep 2024 – Jan 2026",
+    details: [
+      "Completed intensive, hands-on full-stack training focused on the MERN stack, JavaScript, TypeScript, data structures, software architecture, and practical application development.",
+      "Developed full-stack projects involving authentication, payment integration, real-time communication, database management, and cloud deployment."
+    ]
+  },
+  {
     title: "Graphic Designer",
     organization: "GreenTree, Panoor, Kerala",
     duration: "Jul 2022 – Aug 2024",
     details: [
-      "Designed printed materials (posters, brochures, notices).",
-      "Created social media graphics and digital collateral.",
-      "Managed end-to-end design workflows under tight schedules.",
-      "Handled high-volume design deadlines successfully."
+      "Created visual designs and digital assets, building a strong understanding of typography, composition, branding, and visual communication.",
+      "This background continues to influence my approach to frontend development and user experience."
     ]
   }
 ];
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-12 px-6 md:px-12 bg-transparent border-t border-white/5 relative z-10">
+    <section id="journey" className="py-12 px-6 md:px-12 bg-transparent border-t border-white/5 relative z-10">
       <div className="max-w-6xl mx-auto">
         
         <motion.div
@@ -27,7 +34,7 @@ export default function Experience() {
           className="mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-gray-200 tracking-tight">
-            Experience<span className="text-amber-400">.</span>
+            Journey<span className="text-amber-400">.</span>
           </h2>
           <div className="w-16 h-1 bg-cyan-400 mt-4 rounded-full"></div>
         </motion.div>

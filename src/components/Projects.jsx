@@ -2,27 +2,36 @@ import { motion } from "framer-motion";
 
 const projectsData = [
   {
-    title: "OpenNest – Mental Healthcare",
-    description: "Secure mental health consultation platform with chat and video calls.",
-    tech: ["TypeScript", "Node.js", "Express", "MongoDB", "Socket.IO", "Stripe"],
+    title: "Queen To Be – Jewelry E-Commerce",
+    description: "A full-stack jewelry e-commerce platform for a UAE-based jewelry business. In development, preparing for production.",
+    tech: ["React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind CSS", "TanStack Query", "Zod"],
     features: [
-      "Multi-role authentication (Psychologist, Patient, Admin)",
-      "Real-time chat and video call",
-      "Slot booking and payment integration"
+      "Product and collection management, OTP authentication, wishlist and cart",
+      "Cash-on-delivery checkout, inventory management and admin dashboard",
+      "Transactional order processing, concurrency control and idempotent checkout"
+    ],
+  },
+  {
+    title: "OpenNest – Mental Healthcare",
+    description: "A mental healthcare platform connecting patients and psychologists, built with Clean Architecture.",
+    tech: ["React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Redis", "Socket.IO", "WebRTC", "Stripe", "Docker", "AWS EC2"],
+    features: [
+      "Appointment booking with secure Stripe payments",
+      "Real-time chat and WebRTC video consultations",
+      "Role-based access with Redis-backed token revocation"
     ],
     liveLink: "https://www.opennest.club/",
     githubLink: "https://github.com/Sourav-PP/OpenNest",
   },
   {
-    title: "Eternal Chapters – E-Commerce",
-    description: "A secure e-commerce application focusing on an intuitive user experience for finding and buying books.",
-    tech: ["Node.js", "Express", "MongoDB", "Razorpay"],
+    title: "Eternal Chapters – Online Bookstore",
+    description: "A full-stack e-commerce bookstore with product browsing, cart, orders and online payments.",
+    tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "Razorpay", "AWS EC2"],
     features: [
-      "Session-based authentication",
-      "Secure payment integration",
-      "Order & wallet management"
+      "User authentication and shopping cart",
+      "Order management",
+      "Razorpay payment integration"
     ],
-    liveLink: "https://eternal.opennest.club/login",
     githubLink: "https://github.com/Sourav-PP/Eternal_Chapters",
   },
   {
@@ -117,22 +126,26 @@ export default function Projects() {
 
               {/* Action Buttons */}
               <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 md:gap-4">
-                <a 
-                  href={project.liveLink} 
-                  target="_blank" 
+                {project.liveLink && (
+                <a
+                  href={project.liveLink}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="px-5 py-2.5 bg-cyan-400 text-black text-sm font-semibold rounded-xl hover:bg-cyan-300 transition-colors text-center"
                 >
                   Live Link
                 </a>
-                <a 
-                  href={project.githubLink} 
-                  target="_blank" 
+                )}
+                {project.githubLink && (
+                <a
+                  href={project.githubLink}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="px-5 py-2.5 bg-transparent border border-white/10 text-gray-200 text-sm font-semibold rounded-xl hover:bg-white/10 transition-colors text-center"
                 >
                   GitHub
                 </a>
+                )}
               </div>
             </motion.div>
           ))}

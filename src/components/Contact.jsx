@@ -60,7 +60,7 @@ export default function Contact() {
           </h2>
           <div className="w-16 h-1 bg-cyan-400 mt-4 rounded-full"></div>
           <p className="text-gray-400 text-base md:text-lg mt-6 max-w-2xl">
-            Have an exciting project you need help with? Let’s build something great together.
+            I’m open to full-stack, backend, and software development opportunities. Feel free to reach out to discuss opportunities, projects, or collaborations.
           </p>
         </motion.div>
 

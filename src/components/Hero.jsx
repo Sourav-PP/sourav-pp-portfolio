@@ -179,7 +179,7 @@ export default function Hero() {
               {/* ADDED BUTTONS + ICONS (NO STRUCTURE CHANGE ABOVE) */}
               <div className="flex items-center gap-3 mt-16">
                 <a
-                  href="/Sourav_Resume.pdf"
+                  href="/sourav_pp_resume.pdf"
                   download
                   className="px-6 py-2 rounded-full bg-white text-black text-sm font-medium hover:opacity-80 transition"
                 >

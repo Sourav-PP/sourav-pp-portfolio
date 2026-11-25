@@ -5,39 +5,39 @@ import {
   FaServer,
   FaDatabase,
   FaTools,
-  FaPlug,
+  FaProjectDiagram,
 } from "react-icons/fa";
 
 const skillsData = [
   {
-    title: "Programming",
+    title: "Languages",
     icon: FaCode,
-    items: ["JavaScript", "TypeScript", "HTML", "CSS"],
+    items: ["JavaScript", "TypeScript"],
   },
   {
     title: "Frontend",
     icon: FaLaptopCode,
-    items: ["React.js", "Redux", "Tailwind CSS"],
+    items: ["React.js", "HTML5", "CSS3", "Tailwind CSS", "Redux Toolkit", "TanStack Query", "Shadcn/UI", "Framer Motion"],
   },
   {
     title: "Backend",
     icon: FaServer,
-    items: ["Node.js", "Express.js", "Socket.IO"],
+    items: ["Node.js", "Express.js", "REST APIs", "Socket.IO", "WebSockets", "Zod"],
   },
   {
     title: "Databases",
     icon: FaDatabase,
-    items: ["MongoDB", "PostgreSQL", "Redis"],
+    items: ["MongoDB", "Mongoose", "Redis", "PostgreSQL", "MySQL"],
   },
   {
-    title: "DevOps / Tools",
+    title: "Cloud & Tools",
     icon: FaTools,
-    items: ["Git", "EC2", "Docker", "Postman"],
+    items: ["AWS EC2", "Docker", "Nginx", "Git", "GitHub", "Vercel", "Postman"],
   },
   {
-    title: "Integrations",
-    icon: FaPlug,
-    items: ["JWT", "OAuth", "Stripe", "Razorpay", "WebSockets"],
+    title: "Software Engineering",
+    icon: FaProjectDiagram,
+    items: ["Clean Architecture", "SOLID", "OOP", "Repository Pattern", "Auth & Authorization", "DB Transactions"],
   },
 ];
 
@@ -63,8 +63,8 @@ export default function Skills() {
           <div className="w-16 h-1 bg-cyan-400 mt-4 rounded-full" />
 
           <p className="text-gray-400 text-base md:text-lg mt-6 max-w-2xl">
-            A comprehensive toolkit of technologies I use to build robust and
-            scalable web applications.
+            The languages, tools, and engineering practices I use across my
+            projects.
           </p>
         </motion.div>
 
